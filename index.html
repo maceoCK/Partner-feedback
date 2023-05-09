@@ -1,0 +1,52 @@
+<!DOCUTYPE html>
+<html lang = "en">
+  <head>
+    <title>Partner Survery Form</title>
+    <meta charset = "UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id = "title">Partner Survey Form</h1>
+    <p id = "description">Please leave your feedback so the service continues to improve</p>
+    <form method = "post" id = "survey-form">
+      <fieldset>
+        <label for = "boy-first">What is your partner's first name? <input required type="text" id = "boy-first"/></label>
+        <label for = "boy-last">What is your partner's last name? <input required type="text" id = "boy-last"/></label>
+        <label for = "boy-age">What is your partner's age? <input required type="number" id = "boy-age" min="13" max="120"/></label>
+      </fieldset>
+      <fieldset>
+        <label for = "name" id ="name-label">What is your name? <input id ="name" required type = "text" placeholder = "Jane Doe"/></label>
+        <label for = "age">How old are you? <input id = "age"required type = "number" min="13" max="120"/></label>
+      </fieldset>
+      <fieldset>
+        <label for = "dropdown">Why are you filling out this form?
+          <select id = "dropdown" name = "dropdown">
+            <option value=''>(select one)</option>
+            <option value = '1'>Partner did something wrong</option>
+            <option value='2'>Partner requested it</option>
+            <option value='3'>Doing it for fun</option>
+            <option value='4'>Other</option>
+          </select>
+        </label>
+        <p>How would you describe your partner:</p>
+        <label for = "describe"> <input id ="describe" type = "checkbox" class = "inline" value="1">Understanding</input>
+        <label for = "describe"> <input id ="describe" type = "checkbox" class = "inline" value = "2">Loving</input>
+        <label for = "describe"> <input id ="describe" type = "checkbox" class = "inline" value = "3">Impatient</input>
+        <label for = "describe"> <input id ="describe" type = "checkbox" class = "inline" value ="4">Lazy</input>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for = "number" id = "number-label">On a scale of 1-10 what would you rate your boyfriend's recent performace? <input type="number" min ="1" max = "10" id = "number" placeholder = "0"/></label>
+        <label for = "fav">What was your favorite thing that they did recently? <textarea id = "fav" name ="fav" required placeholder = "I really like how they..." rows = "3" cols="30"></textarea></label>
+        <label for = "change">What if anything could they do to inprove? <textarea id = "change" name = "change" rows = "3" cols="30" placeholder="I would like it if they..."></textarea></label>
+      </fieldset>
+      <fieldset>
+        <p>Would you like to send this to him?</p>
+        <label for="send"><input type = "radio" name = "send" checked class = "inline" value = "1">Yes </input><input type = "radio" name ="send" class = "inline" value = "2">No</input></label>
+        <label for = "their-email">What is their email: <input type = "email" id = "their-email" placeholder = "theirname@email.com"/></label>
+        <label for="email" id = "email-label" >What is your email? <input type = "email" id = "email" required placeholder = "yourname@email.com"/></label>
+      </fieldset>
+      <input id = "submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
