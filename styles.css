@@ -50,3 +50,6 @@ input[type="submit"] {
   border-color: white;
   min-width: 300px;
 }
+.mains{
+  background-color:rgba(255,255,255,0.7);
+}
